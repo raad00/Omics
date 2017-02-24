@@ -1,0 +1,15 @@
+Column 8
+Rows 2
+Use gene labels True
+Label Genes 1
+Label Samples 1
+Label Number of rows 1
+Use sample labels True
+Label Number of rows 1
+States 6
+transposition False
+Coding Algorithm PERCENTILE
+OutputName _1
+Gene Position Rows True
+Z-score True
+Quantile False

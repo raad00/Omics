@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9E579F7-9AE4-4A21-8BBD-262FFC829020}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uQlustCore</RootNamespace>
+    <AssemblyName>uQlust</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Graph\ClusterGraphVis.cs" />
+    <Compile Include="Graph\DistanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph\DistanceControl.designer.cs">
+      <DependentUpon>DistanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\DrawHierarchical.cs" />
+    <Compile Include="Graph\HeatMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\HeatMap.Designer.cs">
+      <DependentUpon>HeatMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\InternalProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\InternalProfileForm.designer.cs">
+      <DependentUpon>InternalProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\jury1DSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph\jury1DSetup.designer.cs">
+      <DependentUpon>jury1DSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ListInternal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\ListInternal.designer.cs">
+      <DependentUpon>ListInternal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ListVisual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\ListVisual.designer.cs">
+      <DependentUpon>ListVisual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\FormText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\FormText.designer.cs">
+      <DependentUpon>FormText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\ProfileForm.designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ProgressColumn.cs" />
+    <Compile Include="Graph\Resolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\Resolution.Designer.cs">
+      <DependentUpon>Resolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\ResultsForm.Designer.cs">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\GetProcessName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\GetProcessName.designer.cs">
+      <DependentUpon>GetProcessName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\NumericBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graph\NumericBox.designer.cs">
+      <DependentUpon>NumericBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\ProfileDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\ProfileDefinition.designer.cs">
+      <DependentUpon>ProfileDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\SelectStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\SelectStruct.Designer.cs">
+      <DependentUpon>SelectStruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\TextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\TextBox.designer.cs">
+      <DependentUpon>TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\TextSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\TextSearch.designer.cs">
+      <DependentUpon>TextSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\UpdateMessageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\UpdateMessageWindow.designer.cs">
+      <DependentUpon>UpdateMessageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\VisHierar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\VisHierar.designer.cs">
+      <DependentUpon>VisHierar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\VisHierarCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\VisHierarCircle.designer.cs">
+      <DependentUpon>VisHierarCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph\VisOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph\VisOrder.Designer.cs">
+      <DependentUpon>VisOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeInterval.cs" />
+    <Compile Include="WorkFlows\ClusteringChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\ClusteringChoose.Designer.cs">
+      <DependentUpon>ClusteringChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\clusterType.cs" />
+    <Compile Include="WorkFlows\HNN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\HNN.Designer.cs">
+      <DependentUpon>HNN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\OmicsHeatMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\OmicsHeatMap.Designer.cs">
+      <DependentUpon>OmicsHeatMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\Omics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\Omics.Designer.cs">
+      <DependentUpon>Omics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\HashSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\HashSimple.Designer.cs">
+      <DependentUpon>HashSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\Jury1DSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\Jury1DSimple.Designer.cs">
+      <DependentUpon>Jury1DSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\ResultWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\ResultWindow.Designer.cs">
+      <DependentUpon>ResultWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\Rna_Protein_UserDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\Rna_Protein_UserDef.Designer.cs">
+      <DependentUpon>Rna_Protein_UserDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\RpartSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\RpartSimple.Designer.cs">
+      <DependentUpon>RpartSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\uQlustTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\uQlustTree.Designer.cs">
+      <DependentUpon>uQlustTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\UserDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\UserDef.Designer.cs">
+      <DependentUpon>UserDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlows\UserOrOmics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlows\UserOrOmics.Designer.cs">
+      <DependentUpon>UserOrOmics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Graph\DistanceControl.resx">
+      <DependentUpon>DistanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\HeatMap.resx">
+      <DependentUpon>HeatMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\InternalProfileForm.resx">
+      <DependentUpon>InternalProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\jury1DSetup.resx">
+      <DependentUpon>jury1DSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\ListInternal.resx">
+      <DependentUpon>ListInternal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\ListVisual.resx">
+      <DependentUpon>ListVisual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\FormText.resx">
+      <DependentUpon>FormText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\Resolution.resx">
+      <DependentUpon>Resolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\ResultsForm.resx">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\GetProcessName.resx">
+      <DependentUpon>GetProcessName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\NumericBox.resx">
+      <DependentUpon>NumericBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\ProfileDefinition.resx">
+      <DependentUpon>ProfileDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\SelectStruct.resx">
+      <DependentUpon>SelectStruct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\TextBox.resx">
+      <DependentUpon>TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\TextSearch.resx">
+      <DependentUpon>TextSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\UpdateMessageWindow.resx">
+      <DependentUpon>UpdateMessageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\VisHierar.resx">
+      <DependentUpon>VisHierar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\VisHierarCircle.resx">
+      <DependentUpon>VisHierarCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph\VisOrder.resx">
+      <DependentUpon>VisOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WorkFlows\ClusteringChoose.resx">
+      <DependentUpon>ClusteringChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\HNN.resx">
+      <DependentUpon>HNN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\Omics.resx">
+      <DependentUpon>Omics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\HashSimple.resx">
+      <DependentUpon>HashSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\Jury1DSimple.resx">
+      <DependentUpon>Jury1DSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\OmicsHeatMap.resx">
+      <DependentUpon>OmicsHeatMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\ResultWindow.resx">
+      <DependentUpon>ResultWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\Rna_Protein_UserDef.resx">
+      <DependentUpon>Rna_Protein_UserDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\RpartSimple.resx">
+      <DependentUpon>RpartSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\uQlustTree.resx">
+      <DependentUpon>uQlustTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\UserDef.resx">
+      <DependentUpon>UserDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlows\UserOrOmics.resx">
+      <DependentUpon>UserOrOmics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ic\png\24x24\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ic\png\24x24\Flag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\uQlustCore\uQlustCore.csproj">
+      <Project>{71c7bb85-5d7b-470d-9bd0-a13e7d161f29}</Project>
+      <Name>uQlustCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ic\png\24x24\unzoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

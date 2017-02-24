@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <dir>C:\Projects\uQlust_genome\uQlust\bin\Release</dir>
+  <numberOfCores>3</numberOfCores>
+  <extension>*.pdb</extension>
+  <profilesDir>C:\Projects\uQlust_genome\uQlust\bin\Release\generatedProfiles</profilesDir>
+  <mode>OMICS</mode>
+  <iOTroubles>false</iOTroubles>
+</Settings>

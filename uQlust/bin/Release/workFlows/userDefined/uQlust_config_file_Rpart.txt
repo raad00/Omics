@@ -1,0 +1,34 @@
+########## This is the overall config file for uQlust ##########
+##########               uQlust ver. 1.0              ##########
+########## Based on Adamczak and Meller 2011, 2015    ##########
+########## Please see uQlust_manual.pdf for details   ##########
+##########    Beware of broken lines. Good luck!      ##########
+##########                                            ##########
+##########                                            ##########
+##########          INPUT SECTION                     ##########
+##########                                            ##########
+########## Input files with structures or models to be analyzed are defined below ##########
+List of aligned profile files# data/userDefined/pdb_data;
+##########    End of input file section               ##########
+##########                                            ##########
+##########          OUTPUT SECTION                    ##########
+##########                                            ##########
+##########  Output and temporary files are defined below        ##########
+Output file name# rpart_ref_out.txt
+##########   End of output file section               ##########
+##########                                            ##########
+##########          WORKFLOW SECTION                  ##########
+##########                                            ##########
+########## Ranking using 1D-jury, i.e., uQlust:1D-ProfileName='Jury1D'; profile to be defined in the next section #########
+Cluster algorithm to be used (available: uQlustTree, HKmeans, HierarchicalCluster, FastHCluster, Kmeans, ThresholdCluster, Jury1D, Jury3D, Sift)# HashCluster
+##########    End of workflow type section            ##########
+##########                                            ##########
+##########          PROFILE SECTION                   ##########
+##########                                            ##########
+########## Profile type to be used is defined by an xml file defined below ##########
+##### Parameters Hash #######################
+Number of relevant clusters# 10000
+Percent of data that must be in the relevant clusters# 90
+Use 1Djury to find consesnsus states # True
+Profile name# profiles/pdb_FragBag.profiles
+Combine clusters based on the hamming distance between them# True

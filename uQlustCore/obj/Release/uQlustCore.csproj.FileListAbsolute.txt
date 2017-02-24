@@ -1,0 +1,12 @@
+C:\Projects\uQlust2\uQlustCore\bin\Release\uQlustCore.dll.config
+C:\Projects\uQlust2\uQlustCore\bin\Release\uQlustCore.dll
+C:\Projects\uQlust2\uQlustCore\bin\Release\uQlustCore.pdb
+C:\Projects\uQlust2\uQlustCore\obj\Release\uQlustCore.csprojResolveAssemblyReference.cache
+C:\Projects\uQlust2\uQlustCore\obj\Release\uQlustCore.dll
+C:\Projects\uQlust2\uQlustCore\obj\Release\uQlustCore.pdb
+c:\Projects\uQlust_genome\uQlustCore\obj\Release\uQlustCore.dll
+c:\Projects\uQlust_genome\uQlustCore\obj\Release\uQlustCore.pdb
+c:\Projects\uQlust_genome\uQlustCore\bin\Release\uQlustCore.dll.config
+c:\Projects\uQlust_genome\uQlustCore\bin\Release\uQlustCore.dll
+c:\Projects\uQlust_genome\uQlustCore\bin\Release\uQlustCore.pdb
+C:\Projects\uQlust_genome\uQlustCore\obj\Release\uQlustCore.csprojResolveAssemblyReference.cache

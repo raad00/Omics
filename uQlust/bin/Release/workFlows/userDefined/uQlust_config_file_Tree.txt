@@ -1,0 +1,41 @@
+########## This is the overall config file for uQlust ##########
+##########               uQlust ver. 1.0              ##########
+########## Based on Adamczak and Meller 2011, 2015    ##########
+########## Please see uQlust_manual.pdf for details   ##########
+##########    Beware of broken lines. Good luck!      ##########
+##########                                            ##########
+##########                                            ##########
+##########          INPUT SECTION                     ##########
+##########                                            ##########
+########## Input files with structures or models to be analyzed are defined below ##########
+List of aligned profile files# data/userDefined/pdb_data;
+##########    End of input file section               ##########
+##########                                            ##########
+##########          OUTPUT SECTION                    ##########
+##########                                            ##########
+##########  Output and temporary files are defined below        ##########
+Output file name# uTree_ref_out.txt
+##########   End of output file section               ##########
+##########                                            ##########
+##########          WORKFLOW SECTION                  ##########
+##########                                            ##########
+########## Ranking using 1D-jury, i.e., uQlust:1D-ProfileName='Jury1D'; profile to be defined in the next section #########
+Cluster algorithm to be used (available: uQlustTree, HKmeans, HierarchicalCluster, FastHCluster, Kmeans, ThresholdCluster, Jury1D, Jury3D, Sift)# uQlustTree
+##########    End of workflow type section            ##########
+##########                                            ##########
+##########          PROFILE SECTION                   ##########
+##########                                            ##########
+########## Profile type to be used is defined by an xml file defined below ##########
+########## Parameters Parameters hierarchical #######################
+Use 1DJury to find reference vectors in hash# True
+Path to the profile for 1djury hash# profiles/pdb_FragBag.profiles
+Path to the profile for weighted hamming distance [HIERARCHICAL]# profiles/pdb_FragBag_distance.profile
+Path to the profile for 1djury for consensus [HIERARCHICAL]# profiles/pdb_FragBag.profiles
+Distance measures used for clustering# COSINE
+Needed for aglomerative clustering, defines type of linkage# AVERAGE
+########## End ##########
+########## Parameters Hash ##########
+Percent of data that must be in the relevant clusters# 90
+Number of relevant clusters# 10000
+Profile name# profiles/pdb_FragBag.profiles
+Combine clusters based on the hamming distance between them# false
