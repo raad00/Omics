@@ -322,12 +322,19 @@ namespace Graph
         }
         private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
         {
+
             
             switch(e.Button)
             {
 
                 case MouseButtons.Left:
-                    if (colorNodeUpper != null)
+                    HClusterNode nodeC = upper.CheckClick(upper.rootNode,e.X,e.Y);
+                    if (nodeC != null)
+                    {
+                        TextBoxView rr = new TextBoxView(nodeC.setStruct);
+                        rr.Show();                        
+                    }
+                    if (colorNodeUpper != null && colorNodeUpper.joined!=null)
                         auxUpper = colorNodeUpper;
                     break;      
                 case MouseButtons.Right:
@@ -379,7 +386,13 @@ namespace Graph
             {
 
                 case MouseButtons.Left:
-                    if (colorNodeLeft != null)
+                    HClusterNode nodeC = left.CheckClick(left.rootNode,e.X,e.Y);
+                    if (nodeC != null)
+                    {
+                        TextBoxView rr = new TextBoxView(nodeC.setStruct);
+                        rr.Show();                        
+                    }
+                    if (colorNodeLeft != null && colorNodeLeft.joined!=null)
                         auxLeft = colorNodeLeft;
                     break;
                 case MouseButtons.Right:
